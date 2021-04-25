@@ -41,7 +41,7 @@ class Playlist {
       object.thumbnails = element.thumbnail?.thumbnails;
       object.title = element.title.runs[0]?.text;
       object.url = `https://www.youtube.com/playlist?list=${element.playlistId}`;
-      acc.push(data);
+      acc.push(object);
       return acc;
     }, []);
   }

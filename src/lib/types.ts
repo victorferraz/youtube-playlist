@@ -4,6 +4,7 @@ type PlayListType = {
     width: number;
     height: number;
   }[];
+  url: string;
   title: string;
 };
 

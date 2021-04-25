@@ -33,7 +33,9 @@ channels.forEach((channel) => {
     });
 
     test('playlist code should have the right type values', () => {
+      console.log(playListItem);
       expect(playListItem.thumbnails[0].url).toBeDefined();
+      expect(playListItem.url).toBeDefined();
       expect(playListItem.title).toBeDefined();
     });
 

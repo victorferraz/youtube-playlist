@@ -1,5 +1,8 @@
 import Playlist from './lib/';
+import { PlayListType } from './lib/types';
 
-export default (channel:string)=>{
-  return new Playlist().run(channel);
+function runPlaylist(channel: string): Promise<PlayListType[]> {
+  return new Playlist().run('TechWorldwithNana');
 }
+
+export default runPlaylist;
