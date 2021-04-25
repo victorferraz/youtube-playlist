@@ -1,5 +1,7 @@
 ## Get Youtube playlist from specific Channel
 
+<img src="ttps://raw.githubusercontent.com/victorferraz/youtube-playlist/main/media/img/youtube-logo.svg">
+
 ```
 $ npm install yt-channel-playlist
 ```
@@ -8,7 +10,7 @@ $ npm install yt-channel-playlist
 ```js
 import YoutubePlaylist from `yt-channel-playlist`;
 
-()=> async {
+async () => {
  await YoutubePlaylist('programmingwithmosh');
 
   [{
