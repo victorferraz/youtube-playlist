@@ -10,7 +10,7 @@ $ npm install yt-channel-playlist
 ```js
 import YoutubePlaylist from `yt-channel-playlist`;
 
-()=> async {
+async () => {
  await YoutubePlaylist('programmingwithmosh');
 
   [{
