@@ -1,0 +1,12 @@
+.DS_Store
+*~
+.*.sw?
+.project
+.pydevproject
+tags
+Thumbs.db
+/nbproject/
+node_modules
+*.log
+build
+dist
