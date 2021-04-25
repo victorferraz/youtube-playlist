@@ -3,19 +3,18 @@ import { PlayListType } from '../types';
 
 const channels = ['Freecodecamp', 'RocketSeat', 'TechWorldwithNana'];
 
-channels.forEach((channel)=> {
-
-  describe(`playlist test ${channel}`,  () => {
+channels.forEach((channel) => {
+  describe(`playlist test ${channel}`, () => {
     const playlist = new Playlist();
-    let urlData : string;
+    let urlData: string;
     let playlistCode: PlayListType[];
     let playListItem: PlayListType;
 
-    beforeAll(async ()=> {
+    beforeAll(async () => {
       urlData = await playlist.getUrlData(`https://www.youtube.com/c/${channel}/playlists`);
       playlistCode = await playlist.run(channel);
       playListItem = (playlistCode && playlistCode[0]) ?? {};
-    })
+    });
 
     test('url information should be defined', () => {
       expect(urlData).toBeDefined();
@@ -31,24 +30,19 @@ channels.forEach((channel)=> {
 
     test('playlist code should be more than one', () => {
       expect(playlistCode.length).toBeGreaterThan(0);
-    })
-
-    test('playlist code should have the right type values', ()=> {
-      expect(playListItem.thumbnails[0].url).toBeDefined();
-      expect(playListItem.title).toBeDefined()
     });
 
-    it('should be wrong', async ()=> {
+    test('playlist code should have the right type values', () => {
+      expect(playListItem.thumbnails[0].url).toBeDefined();
+      expect(playListItem.title).toBeDefined();
+    });
+
+    it('should be wrong', async () => {
       await expect(async () => await playlist.getUrlData('test')).rejects.toThrow();
     });
 
-    it('should bring url data', async ()=> {
+    it('should bring url data', async () => {
       expect(urlData).toBeDefined();
     });
-
   });
-
-})
-
-
-
+});
