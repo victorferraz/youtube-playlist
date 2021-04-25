@@ -1,11 +1,11 @@
 ## Get Youtube playlist from specific Channel
 
 ```
-npm install yt-channel-playlist
+$ npm install yt-channel-playlist
 ```
 
 ## How to use
-```
+```js
 import YoutubePlaylist from `yt-channel-playlist`;
 
 ()=> async {
@@ -24,5 +24,4 @@ import YoutubePlaylist from `yt-channel-playlist`;
   }]
 
 }
-
 ```
