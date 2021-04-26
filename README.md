@@ -1,12 +1,13 @@
 ## Get Youtube playlist from specific Channel
 
-<img src="ttps://raw.githubusercontent.com/victorferraz/youtube-playlist/main/media/img/youtube-logo.svg">
+<img src="https://raw.githubusercontent.com/victorferraz/youtube-playlist/main/media/img/youtube-logo.svg">
 
 ```
 $ npm install yt-channel-playlist
 ```
 
 ## How to use
+
 ```js
 import YoutubePlaylist from `yt-channel-playlist`;
 
@@ -26,4 +27,10 @@ async () => {
   }]
 
 }
+```
+
+## How to run tests
+
+```js
+npm run test
 ```
