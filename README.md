@@ -1,6 +1,6 @@
 #### Get youtube playlist without headless browser or youtube api
 
-<img width="200" src="https://raw.githubusercontent.com/victorferraz/youtube-playlist/main/media/img/youtube-logo.svg">
+<img width="200" src="https://raw.githubusercontent.com/victorferraz/youtube-playlist/main/media/img/youtube.png">
 
 ### How to install
 
