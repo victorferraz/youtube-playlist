@@ -2,11 +2,17 @@
 
 <img src="https://raw.githubusercontent.com/victorferraz/youtube-playlist/main/media/img/youtube-logo.svg">
 
+
+## How to install
+
 ```
 $ npm install yt-channel-playlist
 ```
 
+
 ## How to use
+
+
 
 ```js
 import YoutubePlaylist from `yt-channel-playlist`;
